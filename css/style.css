@@ -15,9 +15,9 @@ html {
 }
 
 body {
-    font-family: var(--fuenteParrafos);
-    font-size: 1.6rem;
-    line-height: 2; /*Interlineado*/
+    font-family: var(--fuenteParrafos); /** Tipo de fuente  **/
+    font-size: 1.6rem; /** Tamano de la fuente  **/
+    line-height: 2; /** Interlineado **/
 }
 
 /*Globales*/
@@ -29,7 +29,7 @@ body {
 }
 
 a{
-    text-decoration: none;
+    text-decoration: none; /** Sacamos el subrayado a enlaces**/
 }
 
 h1,h2,h3,h4 {
@@ -77,4 +77,50 @@ img{
 .header__texto{
     text-align: center;
     color: var(--blanco);
+    margin-top: 5rem;
 }
+
+.barra{
+    display: grid;
+    justify-items: center;
+
+}
+
+@media (min-width: 480px) {
+    .barra{
+        display: flex; /** tipo de display flex o grid **/
+        justify-content: space-between; /** centrar verticalmente **/
+        align-items: center; /** centrar horizontalmente **/
+    }
+}
+
+.logo{
+    color: var(--blanco);
+
+}
+
+.logo__nombre{
+    font-weight: 400; /**Letra normal **/
+}
+
+.logo__bold{
+    font-weight: 700; /**Letra negrita **/
+}
+
+.navegacion__enlaces{
+   color: var(--blanco);
+   display: block;
+   font-size: 1.8rem;
+   text-align: center;
+}
+@media (min-width: 768px) {
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+
+
+
+
