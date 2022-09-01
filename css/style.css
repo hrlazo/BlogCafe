@@ -5,6 +5,7 @@
     --primario: #784d3c;
     --blanco: #ffffff;
     --negro: #000000;
+    --gris: #e1e1e1;
 }
 html {
     box-sizing: border-box;
@@ -69,7 +70,7 @@ img{
 /** Header **/
 .header {
     background-image: url(../img/banner.jpg);
-    height: 60rem;
+    height: 62rem;
     background-size: cover; /** Tome todo el espacio disponible **/
     background-position: center center; /** La imagen sea central al responsive **/
 }
@@ -119,6 +120,61 @@ img{
         gap: 2rem;
     }
 }
+
+/**Contenido principal/main **/
+@media (min-width: 768px) {
+    .contenedor-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
+
+.entrada{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+.entrada:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+.entrada__contenido h4{
+    margin: 0;
+}
+
+.boton{
+    display: block;
+    color: var(--blanco);
+    font-family: var(--fuenteHeading);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+    .boton{
+        display: inline-block;
+        margin-left: 28.5rem;
+    }
+}
+.boton--primario{
+    background-color: var(--negro);
+}
+
+/** Barra lateral **/
+.cursos{
+    line-height: 2.5rem;
+}
+.boton--secundario{
+    background-color: var(--primario);
+    margin-left:0;
+}
+
+
+
 
 
 
